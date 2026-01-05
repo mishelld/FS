@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+tbody tr {
+    background-color: rgb(191, 255, 196);
+    border: 1px solid rgb(143, 143, 143);
+}
+
+tbody td {
+    color: rgb(77, 77, 77);
+}
+
+thead tr {
+    background-color: rgb(220, 220, 220);
+    border: 1px solid rgb(143, 143, 143);
+
+}
+
+.points,
+.team {
+    font-weight: bold;
+    color: black;
+}
+
+th,
+td {
+    padding: 10px;
+}

@@ -1,0 +1,56 @@
+ body {
+     background-color: black;
+ }
+
+ h1 {
+     color: rgb(0, 255, 21);
+     text-decoration: underline;
+
+ }
+
+ p {
+     color: rgb(255, 230, 0);
+ }
+
+ h1,
+ p {
+     text-align: center;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     border: 2px solid rgb(0, 255, 21);
+ }
+
+ table tr {
+     border: 1px solid rgb(192, 192, 192);
+ }
+
+ thead tr {
+     color: rgb(0, 255, 21);
+
+ }
+
+ tbody th {
+     color: rgb(255, 149, 0);
+
+ }
+
+
+
+ tbody td {
+     color: rgb(226, 226, 226);
+ }
+
+ thead tr {
+     background-color: #555;
+ }
+
+ tbody tr:nth-child(odd) {
+     background-color: #333;
+ }
+
+ tbody tr:nth-child(even) {
+     background-color: #555;
+ }

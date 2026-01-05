@@ -1,0 +1,19 @@
+.line1 {
+    color: rgb(0, 255, 251);
+    font-size: 100px;
+    font-family: Arial, sans-serif;
+}
+
+
+.line2 {
+    color: rgb(111, 0, 255);
+    font-size: 50px;
+    font-family: "Times New Roman", Georgia, serif;
+}
+
+
+.line3 {
+    color: rgb(255, 0, 132);
+    font-size: 30px;
+    font-family: "Courier New", monospace;
+}

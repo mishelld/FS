@@ -1,0 +1,13 @@
+.container {
+    width: 40%;
+    font-size: 0;
+}
+
+.section {
+    width: calc(100% / 3);
+    background-color: pink;
+    border: 3px solid black;
+    display: inline-block;
+    height: 100px;
+    box-sizing: border-box;
+}

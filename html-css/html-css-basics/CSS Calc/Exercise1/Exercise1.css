@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    font-size: 0;
+}
+
+.right {
+    display: inline-block;
+    width: 20px;
+    background-color: rgb(239, 74, 101);
+    height: 100px;
+
+}
+
+.left {
+    display: inline-block;
+    width: calc(100% - 20px);
+    background-color: rgb(255, 185, 197);
+    height: 100px;
+}

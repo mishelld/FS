@@ -1,0 +1,13 @@
+.bookmark {
+    padding: 20px;
+    margin: 5px;
+    background-color: #ffe9a6;
+    color: rgb(0, 57, 200);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bookmark:hover {
+    background-color: #a9ffa6;
+}

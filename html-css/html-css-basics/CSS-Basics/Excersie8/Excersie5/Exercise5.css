@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(243, 249, 255);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 157, 255);
+    font-weight: bold;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    color: rgb(0, 157, 255);
+    font-weight: bold;
+    padding: 5px;
+    background-color: white;
+}
+
+fieldset {
+    border: 2px solid rgb(0, 157, 255);
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+
+}
+
+input,
+select,
+textarea {
+    border: 3px solid rgb(178, 178, 178);
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label {
+    color: rgb(47, 52, 85);
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: green;
+}
+
+.reset-btn {
+    background-color: red;
+}

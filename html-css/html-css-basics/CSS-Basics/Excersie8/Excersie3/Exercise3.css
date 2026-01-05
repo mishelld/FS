@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(61, 68, 87);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 209, 4);
+}
+
+h2 {
+    color: red;
+}
+
+h3 {
+    color: rgb(0, 128, 255);
+
+}
+
+hr {
+    background-color: red;
+    height: 1px;
+    border: none;
+}
+
+strong {
+    color: yellow;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul li::marker {
+    color: white;
+
+}
+
+.proj {
+    border: none;
+    background-color: black;
+}
+
+img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 3px solid rgb(180, 180, 180);
+}
