@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  width: 50%;
+  height: 80vh;
+}
+.left {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 5px;
+}
+.right {
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+}
+.left,
+.right {
+  display: flex;
+  border: 3px solid rgb(255, 68, 0);
+  padding: 20px;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: rgb(247, 106, 235);
+}
+
+.col {
+  width: 80%;
+  height: 20px;
+  background-color: rgb(255, 68, 0);
+}
+.col-half {
+  width: 60%;
+}

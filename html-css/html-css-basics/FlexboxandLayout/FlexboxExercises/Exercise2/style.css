@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  gap: 10px;
+  border: 1px solid black;
+  width: 50%;
+  padding: 10px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  flex: 1;
+  background-color: rgb(98, 153, 255);
+}
+
+.bigger {
+  flex: 2;
+}
