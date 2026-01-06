@@ -1,0 +1,40 @@
+.container {
+  background-color: #d12f30;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.gray-top {
+  width: 60px;
+  height: 60px;
+  background-color: #aebabe;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.gray-top1 {
+  left: 0;
+}
+.gray-top2 {
+  right: 0;
+}
+.white-box {
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  width: 180px;
+  height: 140px;
+  right: 60px;
+}
+.white-col {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 60px;
+  top: 0;
+}
