@@ -2,6 +2,7 @@
   display: flex;
   width: 50%;
   height: 80vh;
+  border: 1px solid rgb(154, 154, 154);
 }
 .left,
 .right {
@@ -9,7 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(154, 154, 154);
   padding: 20px;
 }
 .circle {
@@ -17,4 +17,7 @@
   height: 150px;
   border-radius: 150px;
   background-color: rgb(106, 153, 247);
+}
+.left {
+  border-right: 1px solid rgb(154, 154, 154);
 }

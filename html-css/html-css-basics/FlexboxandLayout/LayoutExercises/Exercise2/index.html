@@ -9,15 +9,34 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="left">
-        <div class="col-container">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col col-half"></div>
-        </div>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#">Home</a>
       </div>
-      <div class="right">
+
+      <ul class="nav-right">
+        <li><a href="#">Products</a></li>
+
+        <li class="dropdown">
+          <a href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Consulting</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Cart (2)</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div class="con-container">
+        <h1>Welcome to Our Website</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -28,6 +47,6 @@
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-    </div>
+    </main>
   </body>
 </html>
