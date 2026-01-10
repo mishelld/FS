@@ -1,7 +1,6 @@
 body {
   margin: 0;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -9,7 +8,6 @@ body {
 }
 .header {
   background: linear-gradient(to right, #677ce7, #6e65c6, #754ca3);
-
   display: flex;
   align-items: center;
 }
@@ -18,36 +16,38 @@ body {
   font-size: 25px;
   margin-left: 25px;
 }
-
-.footer {
-  background-color: rgb(65, 65, 65);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.footer h4 {
-  color: white;
-}
-.footer-links a {
-  text-decoration: none;
-  color: #b7b7b7;
-  padding: 10px;
-}
 .content {
   flex: 1;
   display: flex;
+}
+.main {
+  flex: 6;
+  padding: 20px;
 }
 .nav,
 .sidebar {
   flex: 1;
   background-color: #f8f9fa;
+  padding: 10px 20px;
 }
-.main {
-  flex: 5;
-  padding: 20px;
+.nav h3,
+.sidebar h3 {
+  font-size: 20px;
+  color: #4b4b4b;
 }
+.nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.nav ul li {
+  padding: 20px 10px;
+}
+.nav a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
 .features {
   background-color: #f8f9fa;
   padding: 10px;
@@ -58,14 +58,7 @@ body {
   font-size: 20px;
   color: #4b4b4b;
 }
-.sidebar {
-  padding: 0 40px;
-  padding-bottom: 100px;
-}
-.sidebar h3 {
-  font-size: 25px;
-  color: #4b4b4b;
-}
+
 .sidebar-container {
   display: flex;
   flex-direction: column;
@@ -79,33 +72,36 @@ body {
   padding: 10px;
   border: 1px solid rgb(219, 219, 219);
 }
-.sidebar div h1 {
+.sidebar-container div h3 {
   font-size: 20px;
 }
-.sidebar div p {
+.sidebar-container div p {
   font-size: 18px;
 }
-.nav {
-  padding: 10px;
+.footer {
+  background-color: #343a40;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
 }
-.nav h3 {
-  color: #4b4b4b;
-}
-.nav ul {
-  list-style: none;
-  padding-left: 0;
+.footer h4 {
+  color: white;
   margin: 0;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #b7b7b7;
+  padding: 10px;
+}
+/*
+*/
+.nav,
+.nav ul {
   display: flex;
   flex-direction: column;
-}
-.nav ul li {
-  padding: 20px 10px;
-}
-.nav a {
-  text-decoration: none;
-  color: #6b6b6b;
 }
 @media (max-width: 600px) {
   .content {
