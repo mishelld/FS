@@ -12,3 +12,5 @@ This repository contains a collection of exercises and practice projects for lea
 
 
 
+![Full Stack Example](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190626123927/untitlsssssed.png)
+
