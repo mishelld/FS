@@ -46,7 +46,50 @@ class BSNode {
       return this.rightChild.findCommonParent(val1, val2);
     }
   }
-  removeNode(root, val) {}
+  removeNode(parent, value) {
+    if (value > this.value && this.rightChild) {
+      return this.rightChild.removeNode(this, value);
+    } else if (value < this.value && this.leftChild) {
+      return this.leftChild.removeNode(this, value);
+    } else {
+      if (this.helperfunc(parent, this)) {
+        return true;
+      }
+    }
+    this.value = this.findMinNode(this.rightChild);
+    this.rightChild.removeNode(this, this.value);
+    return true;
+  }
+  findMinNode(node) {
+    let current = node;
+    while (current.leftChild) {
+      current = current.leftChild;
+    }
+    return current.value;
+  }
+
+  helperfunc(parent, child) {
+    if (!child.leftChild && !child.rightChild) {
+      if (parent.rightChild === child) {
+        parent.rightChild = null;
+      } else if (parent.leftChild === child) {
+        parent.leftChild = null;
+      }
+      return true;
+    } else if (child.leftChild && !child.rightChild) {
+      if (parent.rightChild === child) {
+        parent.rightChild = child.leftChild;
+      } else if (parent.leftChild === child) {
+        parent.rightChild = child.leftChild;
+      }
+    } else if (!child.leftChild && child.rightChild) {
+      if (parent.rightChild === child) {
+        parent.rightChild = child.rightChild;
+      } else if (parent.leftChild === child) {
+        parent.rightChild = child.rightChild;
+      }
+    }
+  }
 }
 
 //insert nodes (same as in lesson)
@@ -63,6 +106,7 @@ console.log(bSTree.findNode("Z")); // should print false
 console.log(bSTree.findNode("F")); // should print false
 console.log(bSTree.findNode("y")); // should print false - we didn't make the tree case sensitive!
 */
+/*
 let bSTree = new BSNode();
 
 letters = ["J", "H", "R", "E", "S", "P", "G", "B", "L", "Y", "I"];
@@ -73,3 +117,12 @@ console.log(bSTree.findCommonParent("B", "G")); //should return "E"
 console.log(bSTree.findCommonParent("B", "L")); //should return "J"
 console.log(bSTree.findCommonParent("L", "Y")); //should return "R"
 console.log(bSTree.findCommonParent("E", "H")); //should return "J"
+*/
+const numbers = [8, 9, 12, 3, 5, 1, 11, 4];
+let nodeWithOneChild = new BSNode();
+numbers.forEach((n) => nodeWithOneChild.insertNode(n));
+console.log(nodeWithOneChild.removeNode(nodeWithOneChild, 9)); // will return tree like the first image (the 9 will be deletied)
+
+let nodeWithTwoChildren = new BSNode();
+numbers.forEach((n) => nodeWithTwoChildren.insertNode(n));
+console.log(nodeWithTwoChildren.removeNode(nodeWithTwoChildren, 8)); // will return tree like the second image (the root will be 5)
