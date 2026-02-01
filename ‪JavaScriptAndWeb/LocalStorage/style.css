@@ -1,0 +1,11 @@
+ul div {
+  display: flex;
+  gap: 10px;
+}
+li {
+  list-style: none;
+}
+
+span {
+  cursor: pointer;
+}
